@@ -21,10 +21,10 @@ pipeline {
             }
             
         }
-        stage ('Check API') {
-            steps {
-                sh "curl http://40.121.40.94:3000/"
-            }
+        stage ('Check Application Availability') {
+            steps{
+        	sh "./testing.sh"
+      		}	
         }
 	}
 }
