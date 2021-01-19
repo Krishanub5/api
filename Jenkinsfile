@@ -23,7 +23,7 @@ pipeline {
         }
         stage ('Check Application Availability') {
             steps{
-        	sh "./testing.sh"
+        	sh "bash testing.sh"
       		}	
         }
 	}
