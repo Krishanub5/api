@@ -17,7 +17,7 @@ pipeline {
         }
         stage ('Deploy Container') {
             steps{
-                sh "docker run -d -p 3000:3000 --name=express express:v1"
+                sh "docker run -d -p 3010:3010 --name=express express:v1"
             }
             
         }
