@@ -1,4 +1,4 @@
-status="$(curl -Is http://52.139.201.153:3010/ | head -1)"
+status="$(curl -Is http://13.92.40.157:3010/ | head -1)"
 validate=( $status )
 if [ ${validate[-2]} == "200" ]; then
   echo "OK"
